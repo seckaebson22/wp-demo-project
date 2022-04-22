@@ -1,0 +1,39 @@
+.topbar {
+    padding: 10px 0;
+    border-bottom: 1px solid #979797;
+
+    @include until($tablet){
+        display: none;
+    }
+
+    .topbar-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .icon-social {
+            color: #DEDEDE;
+        }
+
+        .topbar-contact-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 -15px;
+
+            .contact-detail {
+                margin: 0 15px;
+                color: #646464;
+
+                .icon-email {
+                    font-size: 12px;
+                }
+               
+                .icon {
+                    padding: 0 5px;
+                }
+            }
+        }
+        
+    }
+}

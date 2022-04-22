@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "ThemeIcons";
+    src: url("../fonts/ThemeIcons.eot?7c6f01e34cfe59cda35ad65d9a154706?#iefix") format("embedded-opentype"),
+url("../fonts/ThemeIcons.woff2?7c6f01e34cfe59cda35ad65d9a154706") format("woff2"),
+url("../fonts/ThemeIcons.woff?7c6f01e34cfe59cda35ad65d9a154706") format("woff"),
+url("../fonts/ThemeIcons.ttf?7c6f01e34cfe59cda35ad65d9a154706") format("truetype"),
+url("../fonts/ThemeIcons.svg?7c6f01e34cfe59cda35ad65d9a154706#ThemeIcons") format("svg");
+}
+
+ [class^="icon-"]:before,  [class*=" icon-"]:before {
+    font-family: ThemeIcons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+    content: "\f101";
+}
+.icon-call:before {
+    content: "\f102";
+}
+.icon-email:before {
+    content: "\f103";
+}
+.icon-facebook:before {
+    content: "\f104";
+}
+.icon-instagram:before {
+    content: "\f105";
+}
+.icon-linkedin:before {
+    content: "\f106";
+}
+.icon-pinterest:before {
+    content: "\f107";
+}
+.icon-search:before {
+    content: "\f108";
+}
+.icon-twitter:before {
+    content: "\f109";
+}

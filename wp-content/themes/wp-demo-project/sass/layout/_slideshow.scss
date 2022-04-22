@@ -1,0 +1,105 @@
+.slideshow {
+    &.flickity-resize {
+        .slideshow-slide {
+            min-height: 100%;
+        }
+    }
+
+    .slideshow-slide {
+        &:not([class^="grid-"]):not(.item-step) {
+            width: 100%;
+        }
+
+        .scale-image {
+            padding-bottom: 700px;
+        }
+
+        .slide-content {
+            @include at-least($tablet){
+                max-width: 627px;
+            }
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 18%;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+            transition: all 400ms ease-in-out;
+            padding: 200px 0 0 0;
+            color: white;
+
+            @include until($tablet){
+                padding: 0 40px;
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                transform: translate3d(-50%, -50%, 0);
+            }
+
+            .content {
+                padding: 20px 0;
+            }
+
+           
+        }
+
+        
+    }
+
+    .flickity-prev-next-button {
+        overflow: hidden;
+        background: transparent;
+
+        @include until($small-tablet){
+            display: none;
+        }
+        
+        .flickity-button-icon {
+            height: 32px;
+            color: white;
+        }
+    }
+   
+    &.multi-slide {
+        position: relative;
+        margin: 0 -15px;
+        
+        &.flickity-enabled {
+            display: block;
+        }
+
+        .slideshow-slide {
+            min-height: 100%;
+        }
+
+        .flickity-prev-next-button {
+
+            &.previous {
+                @include at-least($desktop){
+                    @include at-least($centering-width){
+                        left: auto;
+                        right: 1320px;
+                    };
+                }
+            }
+
+            &.next {
+                @include at-least($desktop){
+                    @include at-least($centering-width){
+
+                        left: 1320px;
+                        right: auto;
+                    };
+                }
+            }
+
+            .flickity-button-icon {
+                height: 32px;
+                color: #A98802;
+            }
+           
+        }
+
+    }
+}

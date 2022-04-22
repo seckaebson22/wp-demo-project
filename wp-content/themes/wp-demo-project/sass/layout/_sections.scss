@@ -1,0 +1,63 @@
+.section {
+    padding: 40px 0;
+    @include at-least($tablet){
+        padding: 100px 0;
+    }
+
+    .section-title {
+        position: relative;
+        display: inline-block;
+        text-transform: capitalize;
+        
+        &::before {
+            content: "";
+            height: 4px;
+            background-color: #297013;
+            width: 100%;
+            max-width: 90px;
+            position: absolute;
+            bottom: -10px;
+            z-index: 2;
+        }
+    }
+
+    &.hero,
+    &.image-text{
+        padding: 0;
+        position: relative;
+    }
+
+    &.grey-bg {
+        background: rgba(41,112,19,0.1);
+    }
+
+    .section-image {
+        .scale-image {
+            padding-bottom: 400px;
+        }
+    }
+
+    .section-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        width: 100%;
+        max-width: 900px;
+        text-align: center;
+
+        .section-title {
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+
+        .section-button {
+           justify-content: center;   
+        }
+    }
+}
+
+.section-content {
+    margin: 20px 0;
+}
